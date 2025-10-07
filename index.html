@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarreando por Galicia - El Mapa de Cervezas y Tapas</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_principal.jpg" alt="Logo Jarreando por Galicia">
+        </div>
+        
+        <div id="city-selector-container">
+            <label for="city-selector">Selecciona tu ruta:</label>
+            <select id="city-selector">
+                <option value="galicia" selected>Toda Galicia (Top 15)</option>
+                <option value="acoruna">A Coruña</option>
+                <option value="ferrol">Ferrol</option>
+                <option value="lugo">Lugo</option>
+                <option value="ourense">Ourense</option>
+                <option value="pontevedra">Pontevedra</option>
+                <option value="santiago">Santiago de Compostela</option>
+                <option value="vigo">Vigo</option>
+            </select>
+        </div>
+
+        <p>Elige una marca de cerveza para ver el recorrido por los mejores locales.</p>
+    </header>
+
+    <div id="filters">
+        <img id="todos" src="img/logo_todas.jpg" alt="Ver Todos" class="filter-btn brand-logo active"> 
+        <img id="estrella" src="img/logo_estrella.jpg" alt="Estrella Galicia" class="filter-btn brand-logo">
+        <img id="mahou" src="img/logo_mahou.jpg" alt="Mahou" class="filter-btn brand-logo">
+        <img id="aguila" src="img/logo_aguila.jpg" alt="Águila" class="filter-btn brand-logo">
+        <a href="URL_DE_TU_FORMULARIO_DE_GOOGLE_AQUI" target="_blank" class="filter-btn add-bar-btn">Añade tu Bar</a>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
